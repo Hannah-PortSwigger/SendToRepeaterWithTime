@@ -14,7 +14,7 @@ public class SendToRepeaterWithTime implements BurpExtension
     {
         api.extension().setName("Send to Repeater with time");
 
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("MMddyyyy-HH:mm:ss");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH:mm:ss");
 
         api.userInterface().registerContextMenuItemsProvider(event ->
         {
